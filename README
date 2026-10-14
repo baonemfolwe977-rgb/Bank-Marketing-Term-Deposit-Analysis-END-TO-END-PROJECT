@@ -1,0 +1,109 @@
+# Bank Marketing Term Deposit Analysis
+
+## Overview
+
+This project analyzes the Bank Marketing dataset to identify the customer and campaign characteristics that influence subscription to a bank term deposit. The analysis focuses on the target variable `y`, where `y = yes` indicates that a customer subscribed after a telemarketing campaign.
+
+The goal is to support data-driven marketing decisions by understanding which customers are most likely to respond, which campaign conditions improve conversion, and how macroeconomic factors influence campaign performance.
+
+## Business Objective
+
+The project is designed to answer a practical marketing question:
+
+> Which customer segments should be prioritized for future campaigns to maximize term deposit subscriptions?
+
+By combining customer demographics, campaign behavior, and macroeconomic indicators, the analysis aims to improve targeting, campaign timing, and resource allocation.
+
+## Dataset
+
+The project uses the publicly available Bank Marketing dataset with social and economic context, made available through the UCI Machine Learning Repository and based on the paper by Moro, Cortez, and Rita.
+
+### Source
+- UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/Bank+Marketing
+- Data files: https://archive.ics.uci.edu/ml/machine-learning-databases/00222/
+- Research paper: http://dx.doi.org/10.1016/j.dss.2014.03.001
+- Banco de Portugal economic indicators: https://www.bportugal.pt/estatisticasweb
+
+### Available Files
+- `bank-additional-full.csv` — full dataset
+- `bank-additional.csv` — 10% sample dataset
+- `bank-additional-names.txt` — dataset and attribute documentation
+
+### Target Variable
+- `y` — whether the client subscribed to a term deposit (`yes` or `no`)
+
+## Data Characteristics
+
+The dataset contains customer and campaign information such as:
+- age
+- job type
+- marital status
+- education level
+- housing and personal loan status
+- default status
+- contact type
+- month and day of week of the last contact
+- number of previous contacts
+- campaign history
+- macroeconomic features including employment rate, price index, confidence index, EURIBOR, and number of employed persons
+
+## Methodology
+
+The project follows a structured analytical workflow:
+
+1. Data collection and validation
+2. Data quality assessment
+3. Feature and data cleaning
+4. Exploratory data analysis
+5. Visualization of business trends
+6. Dashboard design for marketing decision support
+7. Interpretation and recommendation
+
+## Data Quality Considerations
+
+The analysis addresses common issues in the dataset, including:
+- missing or unknown values
+- outliers and anomalies
+- irrelevant features
+- inconsistent category labels
+
+One notable issue is the `duration` feature, which is only known after the call ends. As a result, it is excluded from realistic predictive analysis because it would leak target information and distort model performance.
+
+## Tools and Technologies
+
+- Power BI for dashboard design and reporting
+- Python for data preparation and exploratory analysis
+- Excel / Power Query for preprocessing and validation
+- Business intelligence and analytics for strategic interpretation
+
+## Key Findings
+
+The analysis identifies several patterns relevant to campaign optimization, including:
+- differences in subscription likelihood across job categories
+- campaign frequency effects on conversion
+- monthly and seasonal variation in response rates
+- the role of customer traits and socioeconomic context in campaign success
+- opportunities to improve targeting and conversion strategy
+
+## Dashboard
+
+A Power BI dashboard was developed for a marketing manager and includes:
+- month-based slicers
+- conversion rate by campaign count
+- overall subscription performance gauge
+- subscriber distribution by communication channel
+- subscription rate by job type
+
+## Citation
+
+If you use this dataset in your research or publications, please cite:
+
+S. Moro, P. Cortez, and P. Rita. "A Data-Driven Approach to Predict the Success of Bank Telemarketing." Decision Support Systems, 2014.
+
+## License
+
+This project is intended for educational and professional analysis. Please review the licensing and attribution requirements of the original dataset before reuse or redistribution.
+
+## Contact
+
+For questions, suggestions, or collaboration, please contact the repository owner.
