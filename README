@@ -28,7 +28,6 @@ The project uses the publicly available Bank Marketing dataset with social and e
 
 ### Available Files
 - `bank-additional-full.csv` — full dataset
-- `bank-additional.csv` — 10% sample dataset
 - `bank-additional-names.txt` — dataset and attribute documentation
 
 ### Target Variable
